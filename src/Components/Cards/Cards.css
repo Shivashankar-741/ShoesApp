@@ -1,0 +1,12 @@
+.Cards {
+	height: 510px;
+	background-color: red;
+
+	width: 75%;
+	margin: 20px auto;
+}
+
+.inputFields {
+	display: flex;
+	justify-content: space-between;
+}

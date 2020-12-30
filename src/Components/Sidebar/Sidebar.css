@@ -1,0 +1,17 @@
+.Sidebar {
+	width: 20%;
+	/* height: 87vh; */
+	background-color: rgb(41, 38, 38, 0.3);
+
+	/* position: relative;
+	left: -300px; */
+}
+
+/* .Sidebar--active {
+	position: relative;
+	left: -300px;
+} */
+
+.Sidebar--head {
+	margin: 0;
+}
