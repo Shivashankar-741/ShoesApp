@@ -1,17 +1,26 @@
 .Sidebar {
-	width: 20%;
-	/* height: 87vh; */
-	background-color: rgb(41, 38, 38, 0.3);
-
-	/* position: relative;
-	left: -300px; */
-}
-
-/* .Sidebar--active {
+	/* width: 20%; */
+	background-color: rgba(165, 154, 154, 0.2);
 	position: relative;
 	left: -300px;
-} */
+	transition: all 1s ease-out;
+}
 
+.Sidebar--active {
+	left: 0;
+	width: 22%;
+	background-color: rgba(165, 154, 154, 0.2);
+	transition: all 1s ease-out;
+}
+
+.sidebar--close {
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px;
+	color: white;
+	font-size: 20px;
+}
 .Sidebar--head {
 	margin: 0;
 }

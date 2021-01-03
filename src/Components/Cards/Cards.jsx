@@ -5,7 +5,11 @@ const Cards = () => {
 	return (
 		<div className="Cards">
 			<div className="inputFields">
-				<input type="text" className="Cards--input" />
+				<input
+					type="text"
+					className="Cards--input"
+					placeholder="Search for a shoe"
+				/>
 				<select className="cards--sort">
 					<option value="">Sort by price</option>
 					<option value="">Lowest price</option>

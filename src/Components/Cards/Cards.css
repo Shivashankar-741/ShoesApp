@@ -1,12 +1,39 @@
 .Cards {
 	height: 510px;
-	background-color: red;
+	background-color: rgb(41, 38, 38, 0.5);
 
-	width: 75%;
+	width: 70%;
 	margin: 20px auto;
+}
+
+.Cards--input {
+	margin: 15px;
+	background-color: rgba(165, 154, 154, 0.2);
+	border-radius: 5px;
+	border: none;
+	padding: 5px;
+	outline: none;
+	color: white;
+}
+.cards--sort {
+	margin: 15px;
+	background-color: rgba(165, 154, 154, 0.2);
+	border-radius: 6px;
+	border: none;
+	padding: 8px 5px;
+	outline: none;
+	color: white;
 }
 
 .inputFields {
 	display: flex;
 	justify-content: space-between;
+}
+
+::placeholder {
+	font-size: 14px;
+}
+
+option {
+	background-color: #333;
 }
