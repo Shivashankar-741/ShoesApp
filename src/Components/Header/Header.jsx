@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Header.css";
-import { AppContext } from "../AppContext/AppContext";
+import { SidebarContext } from "../Context/SidebarContext";
 import { FaShoppingCart } from "react-icons/fa";
 
 const Header = () => {
-	const [sidebar, setSidebar] = useContext(AppContext);
+	const [sidebar, setSidebar] = useContext(SidebarContext);
 	console.log(sidebar);
 
 	return (

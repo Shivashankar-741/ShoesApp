@@ -1,5 +1,5 @@
 .Cards {
-	height: 510px;
+	/* height: 510px; */
 	background-color: rgb(41, 38, 38, 0.5);
 
 	width: 70%;
@@ -36,4 +36,30 @@
 
 option {
 	background-color: #333;
+}
+li {
+	list-style-type: none;
+}
+
+h2 {
+	margin: 0;
+}
+.Cards--product {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* margin: 10px; */
+}
+
+.Cards--list {
+	margin: 10px;
+	background-color: aliceblue;
+	width: 250px;
+	/* height: 250px; */
+}
+
+.Cards--list__imgIn {
+	width: 100px;
+	height: 70px;
 }
