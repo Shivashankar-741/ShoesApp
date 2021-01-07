@@ -49,17 +49,60 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	/* margin: 10px; */
+
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
 }
 
 .Cards--list {
 	margin: 10px;
-	background-color: aliceblue;
+	background-color: rgba(185, 218, 247, 0.3);
+	color: #fff;
 	width: 250px;
-	/* height: 250px; */
+	border-radius: 10px;
+}
+
+.Cards--list__img {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
 }
 
 .Cards--list__imgIn {
 	width: 100px;
 	height: 70px;
+}
+
+.Cards--list__name,
+.Cards--list__size,
+.Cards--list__color,
+.Cards--list__price {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 12px;
+}
+.btn {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.btn--in {
+	width: 90%;
+	padding: 8px 0;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	background-color: violet;
+	cursor: pointer;
+	color: #fff;
+	font-size: 14px;
+}
+
+.span--size {
+	margin: 0 2px;
+	cursor: pointer;
+}
+.span--color {
+	cursor: pointer;
 }

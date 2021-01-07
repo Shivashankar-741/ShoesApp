@@ -1,9 +1,12 @@
 import React, { useContext } from "react";
 import "./Cards.css";
 import { CardsContext } from "../Context/CardsContext";
+import { CartContext } from "../Context/CartContext";
 
 const Cards = () => {
 	const [cards, setCards] = useContext(CardsContext);
+	const [cart, setCart] = useContext(CartContext);
+	console.log(cart);
 	console.log(cards);
 
 	const handleChange = (e) => {
@@ -34,250 +37,67 @@ const Cards = () => {
 					<option value="Lowest price">Lowest price</option>
 					<option value="highest price">highest price</option>
 				</select>
-				{/* {cards.map((el, index) => (
-					<h1 key={index}>{el.shoe}</h1>
-				))} */}
 			</div>
 			<ul className="Cards--product">
-				<li className="Cards--list">
-					<div className="Cards--list-img">
-						<img
-							src="https://pngimg.com/uploads/vans/vans_PNG24.png"
-							alt=""
-							className="Cards--list__imgIn"
-						/>
-					</div>
-					<div className="Cards--list__name">
-						<h2 className="Cards--list__nameIn">Nike brown</h2>
-					</div>
-					<div className="Cards--list__size">
-						<h2 className="cards--list__sizeLeft">SIZE</h2>
-						<h2 className="cards--list__sizeright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--list__color">
-						<h2 className="cards--list__colorLeft">SIZE</h2>
-						<h2 className="cards--list__colorright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--price">
-						<h2 className="cards--list__priceLeft">SIZE</h2>
-						<h2 className="cards--list__priceright">
-							<span>1999$</span>
-						</h2>
-					</div>
-					<div className="btn">
-						<button className="btn--in">Add to cart</button>
-					</div>
-				</li>
-
-				<li className="Cards--list">
-					<div className="Cards--list-img">
-						<img
-							src="https://pngimg.com/uploads/vans/vans_PNG24.png"
-							alt=""
-							className="Cards--list__imgIn"
-						/>
-					</div>
-					<div className="Cards--list__name">
-						<h2 className="Cards--list__nameIn">Nike brown</h2>
-					</div>
-					<div className="Cards--list__size">
-						<h2 className="cards--list__sizeLeft">SIZE</h2>
-						<h2 className="cards--list__sizeright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--list__color">
-						<h2 className="cards--list__colorLeft">SIZE</h2>
-						<h2 className="cards--list__colorright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--price">
-						<h2 className="cards--list__priceLeft">SIZE</h2>
-						<h2 className="cards--list__priceright">
-							<span>1999$</span>
-						</h2>
-					</div>
-					<div className="btn">
-						<button className="btn--in">Add to cart</button>
-					</div>
-				</li>
-
-				<li className="Cards--list">
-					<div className="Cards--list-img">
-						<img
-							src="https://pngimg.com/uploads/vans/vans_PNG24.png"
-							alt=""
-							className="Cards--list__imgIn"
-						/>
-					</div>
-					<div className="Cards--list__name">
-						<h2 className="Cards--list__nameIn">Nike brown</h2>
-					</div>
-					<div className="Cards--list__size">
-						<h2 className="cards--list__sizeLeft">SIZE</h2>
-						<h2 className="cards--list__sizeright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--list__color">
-						<h2 className="cards--list__colorLeft">SIZE</h2>
-						<h2 className="cards--list__colorright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--price">
-						<h2 className="cards--list__priceLeft">SIZE</h2>
-						<h2 className="cards--list__priceright">
-							<span>1999$</span>
-						</h2>
-					</div>
-					<div className="btn">
-						<button className="btn--in">Add to cart</button>
-					</div>
-				</li>
-
-				<li className="Cards--list">
-					<div className="Cards--list-img">
-						<img
-							src="https://pngimg.com/uploads/vans/vans_PNG24.png"
-							alt=""
-							className="Cards--list__imgIn"
-						/>
-					</div>
-					<div className="Cards--list__name">
-						<h2 className="Cards--list__nameIn">Nike brown</h2>
-					</div>
-					<div className="Cards--list__size">
-						<h2 className="cards--list__sizeLeft">SIZE</h2>
-						<h2 className="cards--list__sizeright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--list__color">
-						<h2 className="cards--list__colorLeft">SIZE</h2>
-						<h2 className="cards--list__colorright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--price">
-						<h2 className="cards--list__priceLeft">SIZE</h2>
-						<h2 className="cards--list__priceright">
-							<span>1999$</span>
-						</h2>
-					</div>
-					<div className="btn">
-						<button className="btn--in">Add to cart</button>
-					</div>
-				</li>
-
-				<li className="Cards--list">
-					<div className="Cards--list-img">
-						<img
-							src="https://pngimg.com/uploads/vans/vans_PNG24.png"
-							alt=""
-							className="Cards--list__imgIn"
-						/>
-					</div>
-					<div className="Cards--list__name">
-						<h2 className="Cards--list__nameIn">Nike brown</h2>
-					</div>
-					<div className="Cards--list__size">
-						<h2 className="cards--list__sizeLeft">SIZE</h2>
-						<h2 className="cards--list__sizeright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--list__color">
-						<h2 className="cards--list__colorLeft">SIZE</h2>
-						<h2 className="cards--list__colorright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--price">
-						<h2 className="cards--list__priceLeft">SIZE</h2>
-						<h2 className="cards--list__priceright">
-							<span>1999$</span>
-						</h2>
-					</div>
-					<div className="btn">
-						<button className="btn--in">Add to cart</button>
-					</div>
-				</li>
-
-				<li className="Cards--list">
-					<div className="Cards--list-img">
-						<img
-							src="https://pngimg.com/uploads/vans/vans_PNG24.png"
-							alt=""
-							className="Cards--list__imgIn"
-						/>
-					</div>
-					<div className="Cards--list__name">
-						<h2 className="Cards--list__nameIn">Nike brown</h2>
-					</div>
-					<div className="Cards--list__size">
-						<h2 className="cards--list__sizeLeft">SIZE</h2>
-						<h2 className="cards--list__sizeright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--list__color">
-						<h2 className="cards--list__colorLeft">SIZE</h2>
-						<h2 className="cards--list__colorright">
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-							<span>7</span>
-						</h2>
-					</div>
-					<div className="Cards--price">
-						<h2 className="cards--list__priceLeft">SIZE</h2>
-						<h2 className="cards--list__priceright">
-							<span>1999$</span>
-						</h2>
-					</div>
-					<div className="btn">
-						<button className="btn--in">Add to cart</button>
-					</div>
-				</li>
+				{cards.map((el, index) => (
+					<li className="Cards--list" key={index}>
+						<div className="Cards--list__img">
+							<img
+								src={el.shoeImg}
+								alt="Shoes"
+								className="Cards--list__imgIn"
+							/>
+						</div>
+						<div className="Cards--list__name">
+							<h2 className="Cards--list__nameIn">{el.shoe}</h2>
+						</div>
+						<div className="Cards--list__size">
+							<h2 className="cards--list__sizeLeft">SIZE</h2>
+							<h2 className="cards--list__sizeright">
+								{el.size.map((el, index) => (
+									<span key={index} className={"span--size span--size__" + el}>
+										{el}
+									</span>
+								))}
+							</h2>
+						</div>
+						<div className="Cards--list__color">
+							<h2 className="cards--list__colorLeft">COLOR</h2>
+							<h2 className="cards--list__colorright">
+								{el.color.map((el, index) => (
+									<span key={index} className={"span--color " + el}>
+										{el}
+									</span>
+								))}
+							</h2>
+						</div>
+						<div className="Cards--list__price">
+							<h2 className="cards--list__priceLeft">PRICE</h2>
+							<h2 className="cards--list__priceright">
+								<span>{el.price}$</span>
+							</h2>
+						</div>
+						<div className="btn">
+							<button
+								className="btn--in"
+								onClick={() =>
+									setCart(
+										cart.concat([
+											{
+												shoe: el.shoe,
+												size: el.size,
+												color: el.color,
+												price: el.price,
+											},
+										])
+									)
+								}
+							>
+								Add to cart
+							</button>
+						</div>
+					</li>
+				))}
 			</ul>
 		</div>
 	);

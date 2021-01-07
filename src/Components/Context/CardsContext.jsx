@@ -35,7 +35,7 @@ export const CardsProvider = (props) => {
 		{
 			shoe: "Nike green",
 			size: [7, 8, 9, 10],
-			color: ["brown, darkgreen"],
+			color: ["brown, yellow"],
 			price: 599,
 			shoeImg: "https://pngimg.com/uploads/vans/vans_PNG24.png",
 		},
