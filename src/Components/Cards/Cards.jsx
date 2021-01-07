@@ -84,6 +84,7 @@ const Cards = () => {
 									setCart(
 										cart.concat([
 											{
+												shoeImg: el.shoeImg,
 												shoe: el.shoe,
 												size: el.size,
 												color: el.color,

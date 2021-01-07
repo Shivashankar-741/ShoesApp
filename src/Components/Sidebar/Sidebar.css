@@ -7,8 +7,10 @@
 }
 
 .Sidebar--active {
+	display: flex;
+	flex-direction: column;
 	left: 0;
-	width: 22%;
+	width: 25%;
 	background-color: rgba(165, 154, 154, 0.2);
 	transition: all 1s ease-out;
 }
@@ -23,4 +25,35 @@
 }
 .Sidebar--head {
 	margin: 0;
+}
+
+/* SIDEBAR CARDS */
+
+.sidebar--cart__list {
+	margin: 25px 0px;
+	background-color: rgba(185, 218, 247, 0.3);
+	color: #fff;
+	width: 210px;
+	border-radius: 10px;
+}
+
+.sidebar--cart__imgIn {
+	width: 80px;
+	height: 80px;
+}
+
+.sidebar--cart__img {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}
+
+.sidebar--cart__name,
+.sidebar--cart__size,
+.sidebar--cart__color,
+.sidebar--cart__price {
+	font-size: 12px;
+	display: flex;
+	justify-content: space-evenly;
+	padding: 5px;
 }
